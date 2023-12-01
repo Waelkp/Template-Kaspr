@@ -561,3 +561,208 @@ header .form i {
   }
 }
 /* End About us */
+/* <!-- Start Stats --> */
+.stats {
+  background-image: url("../imges/stats.png");
+  background-size: cover;
+  padding: 100px 0px;
+  position: relative;
+}
+.stats::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgb(0 0 0 / 50%);
+}
+.stats .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  background-color: var(--transpColor);
+  padding: 0px;
+  position: relative;
+  z-index: 5;
+}
+.stats .container .stats-box {
+  flex-basis: 25%;
+  padding: 50px 0px;
+  line-height: 2.5;
+  color: white;
+  transition: 0.6s;
+  transform-origin: bottom;
+}
+@media (max-width: 992px) {
+  .stats .container .stats-box {
+    flex-basis: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .stats .container .stats-box {
+    flex-basis: 100%;
+  }
+}
+.stats .container .stats-box:hover {
+  background-color: black;
+}
+.container .stats-box i {
+  font-size: 30px;
+  background-color: black;
+  border: 10px solid black;
+  border-radius: 50%;
+  padding: 5px;
+}
+.container .stats-box .number {
+  font-weight: 800;
+  font-size: 35px;
+}
+.container .stats-box p {
+  font-size: 12px;
+}
+/* <!-- End Stats --> */
+/* Start Our Skills */
+.our-skills {
+  padding-top: var(--padding-section);
+  padding-bottom: var(--padding-section);
+}
+.our-skills .container {
+  display: flex;
+}
+.our-skills .container .team-detalis {
+  text-align: center;
+  line-height: 2.5;
+  flex-basis: 45%;
+  margin: 0px auto;
+  position: relative;
+}
+.our-skills .container .team-detalis h2 {
+  font-weight: normal;
+}
+.our-skills .container .team-detalis > p {
+  color: #777;
+  font-size: 14px;
+}
+.our-skills .container .team-detalis ul {
+  position: absolute;
+  bottom: -65px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 70px;
+}
+.our-skills .container .team-detalis ul li {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #777;
+}
+.our-skills .container .team-detalis ul li.active {
+  background-color: var(--mainColor);
+  border-color: var(--mainColor);
+}
+
+.container .team-detalis .content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.container .team-detalis .content p {
+  flex-basis: 75%;
+  text-align: start;
+  font-size: 13px;
+  line-height: 1.6;
+  border-bottom: 1px solid #777;
+  height: 105px;
+  position: relative;
+}
+.container .team-detalis .content p span {
+  position: absolute;
+  bottom: 10px;
+  right: 0px;
+  color: #777;
+}
+.container .team-detalis .content .avtar {
+  flex-basis: 15%;
+}
+.team-detalis .content .avtar img {
+  max-width: 100%;
+  border-radius: 50%;
+}
+.container .skill-team {
+  text-align: center;
+  line-height: 2.5;
+  flex-basis: 45%;
+}
+.container .skill-team h2 {
+  font-weight: normal;
+}
+.container .skill-team p {
+  font-size: 14px;
+  color: #777;
+}
+.container .sk {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  height: 61%;
+}
+.container .sk .bskill {
+  flex-basis: 100%;
+}
+.container .sk h4 {
+  text-align: start;
+  font-weight: normal;
+  font-size: 12px;
+}
+.container .sk .rang {
+  width: 100%;
+  height: 20px;
+}
+.container .sk .bskill:nth-child(1) .rang {
+  background-image: linear-gradient(
+    to right,
+    var(--mainColor) 90%,
+    #dedadc 90%
+  );
+}
+.container .sk .bskill:nth-child(2) .rang {
+  background-image: linear-gradient(
+    to right,
+    var(--mainColor) 80%,
+    #dedadc 80%
+  );
+}
+.container .sk .bskill:nth-child(3) .rang {
+  background-image: linear-gradient(
+    to right,
+    var(--mainColor) 85%,
+    #dedadc 85%
+  );
+}
+.container .sk .bskill:nth-child(4) .rang {
+  background-image: linear-gradient(
+    to right,
+    var(--mainColor) 90%,
+    #dedadc 90%
+  );
+}
+@media (max-width: 768px) {
+  .our-skills .container .team-detalis {
+    flex-basis: 100%;
+    margin-bottom: 100px;
+  }
+  .container .skill-team {
+    flex-basis: 100%;
+  }
+}
+.our-skills .container {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-self: center;
+}
+/* End Skill Team */
