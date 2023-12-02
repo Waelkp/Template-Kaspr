@@ -881,3 +881,193 @@ header .form i {
   color: white;
 }
 /* End Pricing */
+/* Start subscribe secion */
+.subscribe {
+  background-image: url("../imges/subscribe.jpg");
+  background-size: cover;
+  padding-top: var(--padding-section);
+  padding-bottom: var(--padding-section);
+  color: white;
+  position: relative;
+}
+.subscribe::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 50%);
+}
+.subscribe .container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 991px) {
+  .subscribe .container {
+    flex-direction: column;
+  }
+}
+.subscribe .container form {
+  display: flex;
+  position: relative;
+  width: 500px;
+  max-width: 100%;
+  border: none;
+}
+.subscribe form i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 25px;
+  font-size: 25px;
+  color: #ffffffcc;
+}
+.subscribe form input:first-of-type {
+  padding: 20px 40px;
+  padding-left: 60px;
+  background: none;
+  caret-color: var(--mainColor);
+  width: calc(100% - 130px);
+  color: #fff;
+  border: 1px solid white;
+  border-right: none;
+}
+.subscribe form input:last-of-type {
+  width: 130px;
+  background-color: var(--mainColor);
+  border: 1px solid var(--mainColor);
+  border-left: none;
+  color: #fff;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+.subscribe form input:first-of-type:focus,
+.subscribe form input:last-of-type:focus {
+  outline: none;
+}
+.subscribe form ::placeholder {
+  color: white;
+}
+.subscribe p {
+  line-height: 2;
+  margin-left: 30px;
+}
+@media (max-width: 990px) {
+  .subscribe p {
+    margin: 30px;
+  }
+}
+/* End subscribe secion */
+/* Start Contact us */
+.contact-with {
+  padding-top: var(--padding-section);
+  padding-bottom: var(--padding-section);
+}
+.contact-with .container .things {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 991px) {
+  .contact-with .container .things {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.contact-with .container .things form {
+  display: grid;
+  gap: 20px;
+  width: 400px;
+  max-width: 100%;
+  margin: 30px;
+  margin-top: 0px;
+  position: relative;
+}
+.contact-with .container .things form input,
+.contact-with .container .things form textarea {
+  padding: 20px;
+}
+.contact-with .container .things form input:last-of-type {
+  display: block;
+  background-color: var(--mainColor);
+  color: white;
+  width: 200px;
+  border: none;
+  position: relative;
+  bottom: 0;
+  right: -50%;
+  transform: translateX(-50%);
+}
+.contact-with .container .things .info {
+  text-align: center;
+}
+.contact-with .container .things .info h4 {
+  font-weight: normal;
+}
+.contact-with .container .things .info pre,
+.contact-with .container .things .info p {
+  color: #777;
+  margin-top: 5px;
+  line-height: 1.5;
+}
+/* End Contact us */
+/* Start end footer */
+footer {
+  padding-top: var(--padding-section);
+  padding-bottom: var(--padding-section);
+  background-image: url("../imges/subscribe.jpg");
+  background-size: cover;
+  position: relative;
+}
+footer::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 65%);
+}
+footer .container {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+footer .container .end {
+}
+footer .container .end img {
+  height: 50px;
+  margin-bottom: 50px;
+}
+footer .container .end h3 {
+  color: white;
+  padding-bottom: 35px;
+  font-size: 25px;
+  border-bottom: 1px solid white;
+  width: fit-content;
+  margin: 0px auto;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+footer .container .end .social {
+  color: white;
+  font-size: 25px;
+  margin: 0px auto;
+  margin-top: 20px;
+}
+footer .container .end .social i {
+  margin-right: 10px;
+}
+footer .container .end p {
+  margin-top: 40px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+footer .container .end p span {
+  color: var(--mainColor);
+  text-transform: uppercase;
+}
+/* End end footer */
