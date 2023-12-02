@@ -50,7 +50,7 @@ ul {
   font-size: 40px;
   margin-bottom: 70px;
   position: relative;
-  text-transform: uppercase
+  text-transform: uppercase;
 }
 .container .first-heading h2::after {
   position: absolute;
@@ -651,7 +651,7 @@ header .form i {
   position: absolute;
   bottom: -65px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) scale(0.7);
   display: flex;
   justify-content: space-between;
   width: 70px;
@@ -718,7 +718,7 @@ header .form i {
 .container .sk h4 {
   text-align: start;
   font-weight: normal;
-  font-size: 12px;
+  font-size: 19px;
 }
 .container .sk .rang {
   width: 100%;
@@ -754,11 +754,11 @@ header .form i {
 }
 @media (max-width: 768px) {
   .our-skills .container .team-detalis {
-    flex-basis: 100%;
+    flex-basis: 70%;
     margin-bottom: 100px;
   }
   .container .skill-team {
-    flex-basis: 100%;
+    flex-basis: 70%;
   }
 }
 .our-skills .container {
