@@ -61,7 +61,6 @@ ul {
   left: 50%;
   transform: translateX(-50%);
   bottom: -26px;
-  text-transform: uppercase;
 }
 .container .first-heading h2::before {
   position: absolute;
@@ -505,7 +504,7 @@ header .form i {
 .video-box .overlay {
   position: absolute;
   width: 100%;
-  height: 99.2%;
+  height: 99.3%;
   top: 0;
   left: 0;
   background-color: rgb(0 0 0 / 50%);
@@ -649,7 +648,7 @@ header .form i {
 }
 .our-skills .container .team-detalis ul {
   position: absolute;
-  bottom: -65px;
+  bottom: -50px;
   left: 50%;
   transform: translateX(-50%) scale(0.7);
   display: flex;
@@ -720,38 +719,37 @@ header .form i {
   font-weight: normal;
   font-size: 19px;
 }
-.container .sk .rang {
-  width: 100%;
-  height: 20px;
+.skill-team .sk .bskill .range {
+  background-color: #ccc;
+  height: 30px;
 }
-.container .sk .bskill:nth-child(1) .rang {
-  background-image: linear-gradient(
-    to right,
-    var(--mainColor) 90%,
-    #dedadc 90%
-  );
+.skill-team .sk .bskill .range span {
+  display: block;
+  background-color: var(--mainColor);
+  height: 100%;
+  position: relative;
 }
-.container .sk .bskill:nth-child(2) .rang {
-  background-image: linear-gradient(
-    to right,
-    var(--mainColor) 80%,
-    #dedadc 80%
-  );
+.skill-team .sk .bskill .range span::after {
+  content: attr(data-progress);
+  position: absolute;
+  background-color: black;
+  color: white;
+  top: -40px;
+  right: -20px;
+  width: 45px;
+  font-size: 12px;
+  border-radius: 20px;
 }
-.container .sk .bskill:nth-child(3) .rang {
-  background-image: linear-gradient(
-    to right,
-    var(--mainColor) 85%,
-    #dedadc 85%
-  );
+.skill-team .sk .bskill .range span::before {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  border-width: 8px;
+  border-color: black transparent transparent;
+  top: -10px;
+  right: -7px;
 }
-.container .sk .bskill:nth-child(4) .rang {
-  background-image: linear-gradient(
-    to right,
-    var(--mainColor) 90%,
-    #dedadc 90%
-  );
-}
+
 @media (max-width: 768px) {
   .our-skills .container .team-detalis {
     flex-basis: 70%;
@@ -767,3 +765,119 @@ header .form i {
   align-self: center;
 }
 /* End Skill Team */
+/* Start Quote */
+.quote {
+  background-image: url(../imges/quote.jpg);
+  background-size: cover;
+  text-align: center;
+  color: white;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-top: var(--padding-section);
+  padding-bottom: var(--padding-section);
+}
+.quote::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgb(0 0 0 / 80%);
+}
+.quote .text-quote {
+  position: relative;
+  z-index: 1;
+  font-size: 30px;
+}
+.quote .text-quote p {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+/* End Quote */
+/* Start Pricing */
+.pricing {
+  padding-top: var(--padding-section);
+  padding-bottom: var(--padding-section);
+}
+.pricing .container {
+  text-align: center;
+}
+.pricing .plans {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  background-color: white;
+  padding: 20px;
+}
+.pricing .plans .plan {
+  text-align: center;
+  margin-bottom: 35px;
+  background-color: #fcfcfc;
+  padding-bottom: 30px;
+  transition: 0.7s;
+}
+.pricing .plans .plan .head {
+  padding: 40px 20px;
+  border-bottom: 1px solid var(--mainColor);
+  border-top: 1px solid var(--mainColor);
+}
+.pricing .plans .plan .head h4 {
+  margin-bottom: 20px;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.pricing .plans .plan .head span {
+  font-size: 65px;
+  font-weight: 800;
+  margin-left: 25px;
+}
+.pricing .plans .plan .head sup {
+  font-weight: normal;
+  font-size: 50px;
+}
+.pricing .plans .plan .head sub {
+  font-weight: normal;
+  font-size: 20px;
+}
+.pricing .plans .plan ul {
+  padding: 40px;
+  border-bottom: 1px solid var(--mainColor);
+  border-top: 1px solid var(--mainColor);
+}
+.pricing .plans .plan ul li {
+  padding: 15px 0px;
+  width: 175px;
+  margin: 0px auto;
+  border-bottom: 1px solid var(--mainColor);
+}
+.pricing .plans .plan .foot {
+  margin-top: 50px;
+}
+.pricing .plans .plan .foot button {
+  padding: 25px;
+  border: 1px solid var(--mainColor);
+  color: #006064;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.pricing .plans .plan .foot button:hover {
+  box-shadow: -10px 10px 5px 5px black;
+  transform: translate(10px, -10px);
+  border-radius: 10px;
+}
+.pricing .container > p {
+  font-size: 25px;
+  margin-bottom: 40px;
+}
+.pricing .container > a {
+  text-decoration: none;
+  background-color: var(--mainColor);
+  padding: 15px 25px;
+  color: white;
+}
+/* End Pricing */
